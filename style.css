@@ -2,7 +2,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: visible;
 }
 .form_container {
   background-color: aqua;
@@ -220,7 +221,7 @@ h1 {
   font-size: 21px;
   color: red;
   background-color: white;
-  margin: -30px 15%;
+  margin: -10px 15%;
   text-align: center;
   width: 30%;
   font-weight: bold;
@@ -277,6 +278,7 @@ h1 {
   width: 10%;
   border: 0;
   outline: 0;
+  top: -50px;
   text-transform: uppercase;
   background-color: blueviolet;
   color: white;
@@ -327,6 +329,7 @@ h1 {
   cursor: pointer;
   outline: 0;
   border: 0;
+  margin: 20px auto;
   text-transform: uppercase;
   color: white;
   background-color: grey;
