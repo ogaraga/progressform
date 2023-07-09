@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Project to build a multiform with progress bar by Raymond Ogaraga">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,500;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <title>MULTI-FORM WITH PROGRESS BAR</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="form_container">
+        <h1>Multi-form filling & progress indicator</h1>
+        <div class="progress_container">
+            <span class="progress" id="progress"></span>
+            <span class="circle active">1</span>
+            <span class="circle">2</span>
+            <span class="circle">3</span>
+            <span class="circle">4</span>
+        </div>
+        <form action="" method="get" class="parent_form" id="parentf">
+            <div class="signup_form">
+                <h2>SIGN-UP FORM</h2>
+                <label id="name">full name</label>
+                <input type="text" name="name" id="fullname" placeholder="Enter your full name">
+                <i class="fa-solid fa-user"></i><br>
+                <label id="username">email</label>
+                <input type="email" name="email" id="email" placeholder="Enter your email address">
+                <i class="fa-solid fa-envelope"></i><br>
+                <label id="phone">Phone #</label>
+                <input type="tel" name="phone" id="phone" placeholder="Enter your telephone #">
+                <i class="fa-solid fa-phone"></i><br>
+                <label id="pswd">password</label>
+                <input type="password" name="password" id="pswd1" placeholder="***********">
+                <i class="fa-solid fa-eye" id="eye1" style="display: none;"></i>
+                <i class="fa-solid fa-eye-slash" id="slash1"></i><br>
+                <label id="pswd">password 2</label>
+                <input type="password" name="password" id="pswd2" placeholder="***********">
+                <i class="fa-solid fa-eye" id="eye2" style="display: none;"></i>
+                <i class="fa-solid fa-eye-slash" id="slash2"></i><br>
+                <input type="checkbox" name="check" id="check">
+                <p>By checking this box, you have accepted to abide by our terms and conditions</p><br>
+                <button type="button" id="sign_up">sign up</button><br><br>
+            </div>
+            <div class="login_form">
+                <div class="form_wrapper1" style="display: none;">
+                    <h2>LOGIN FORM</h2>
+                    <label id="email">email</label>
+                    <input type="email" name="email" id="email_1" placeholder="Enter your email"><i class="fa-solid fa-envelope"></i><br>
+                    <label id="password">password</label>
+                    <input type="password" name="name" id="pswd3" placeholder="*********">
+                    <i class="fa-solid fa-eye" id="eye3" style="display: none;"></i>
+                    <i class="fa-solid fa-eye-slash" id="slash3"></i><br>
+                    <button type="button" id="prev">prev</button>
+                    <span id="spanned"></span>
+                    <button type="button" id="next">next</button>
+                </div> <br> <br>
+                <div class="form_wrapper2" style="display: none;">
+                    <h2>FILL IN DETAILS</h2>
+                    <label id="fname">first name</label>
+                    <input type="text" name="fname" id="fname" placeholder="Enter your first name"><i class="fa-solid fa-user"></i><br>
+                    <label id="sname">surname</label>
+                    <input type="text" name="sname" id="sname" placeholder="Enter your surname"><i class="fa-solid fa-user"></i><br>
+                    <label id="phone">phone #</label>
+                    <input type="tel" name="phone" id="phone2" placeholder="Enter your phone #"><i class="fa-solid fa-phone"></i><br>
+                    <button type="button" id="prev1">prev</button>
+                    <p id="spanP"></p>
+                    <button type="button" id="next1">next</button>
+                </div>
+                <div class="form_wrapper3" style="display: none;" >
+                    <h2>FILL IN DETAILS</h2>
+                    <label id="state">state of origin</label>
+                    <input type="text" name="state" id="state" placeholder="Enter your State of Origin"><br>
+                    <label id="reside">resident address</label>
+                    <input type="text" name="address" id="address" placeholder="Enter your Resident address"><i class="fa-solid fa-house"></i><br>
+                    <label id="occup">occupation</label>
+                    <input type="text" name="occupation" id="occupation" placeholder="Enter your ocuupation"><i class="fa-solid fa-user-tie"></i><br>
+                    <label for="resume">Credentials</label>
+                    <input type="file" name="file" id="file" multiple><br>
+                    <button type="button" id="prev2">prev</button>
+                    <span id="spanEm"></span>
+                    <button type="button" id="submit">Submit</button>
+                </div>
+            
+            </div>
+        </form>
+    </div>
+
+<script src="bar.js"></script>
+</body>
+</html>
